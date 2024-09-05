@@ -1,12 +1,15 @@
 import React from 'react';
-import './style.css'
+import Navbar from '../Navbar';
+import UserDashboard from '../UserDashboard';
+import './style.css';
 
-const Index: React.FC = () => {
+const Home: React.FC = () => {
   return (
-    <div className="home">
-      <h1>Ram Ram ji</h1>
-    </div>
+    <>
+    <Navbar/>
+    <UserDashboard/>
+    </>
   );
 };
 
-export default Index;
+export default Home;
